@@ -24,7 +24,6 @@ namespace World_Skills_Zadatak_1
         public DataTable import { get; set; }
 
         private DataTable display = new DataTable();
-
         private string[] preEditedCell = { "", "", "" };
         private string[] postEditedCell = { "", "", "" };
         void extractProper()
@@ -54,10 +53,10 @@ namespace World_Skills_Zadatak_1
                 if (import.IsInitialized)
                 {
                     extractProper();
+
                     aTimer.Stop();
                 }
         }
-
         private void aDisplay_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
             int i = 0;
@@ -67,7 +66,6 @@ namespace World_Skills_Zadatak_1
             label2.Text = preEditedCell[1];
             label3.Text = preEditedCell[2];
         }
-
         private void aDisplay_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             if(!aDisplay.CurrentCell.Value.Equals(preEditedCell[aDisplay.CurrentCell.ColumnIndex]))
@@ -85,6 +83,20 @@ namespace World_Skills_Zadatak_1
                 command.Connection.Open();
                 command.ExecuteNonQuery();
             }
+        }
+        private void aDraw_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Debug.WriteLine("wooo");
+            //if (Application.OpenForms.Count.Equals(0))
+            //    Application.Exit();
+        }
+
+        private void aDisplayProperForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Debug.WriteLine("waaa");
+            //Debug.WriteLine(Application.OpenForms[0].);
+            //if (Application.OpenForms.Count <= 1)
+            //    Application.Exit();
         }
     }
 }

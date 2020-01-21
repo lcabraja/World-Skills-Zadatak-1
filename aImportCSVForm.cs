@@ -28,10 +28,10 @@ namespace World_Skills_Zadatak_1
         }
         private void aReadFileButton_Click(object sender, EventArgs e)
         {
-            string address = @"C:\Users\doss\Downloads\HYG-Database-master\hygdata_v3.csv";
+            //string address = @"C:\Users\doss\Downloads\HYG-Database-master\hygdata_v3.csv";
             try
             {
-                ReadCSV csv = new ReadCSV(address);//aTextBox.Text);
+                ReadCSV csv = new ReadCSV(aTextBox.Text);
                 try
                 {
                     export = csv.readCSV;

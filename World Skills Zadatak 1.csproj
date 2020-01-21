@@ -76,6 +76,12 @@
     <Compile Include="aDisplayProperForm.Designer.cs">
       <DependentUpon>aDisplayProperForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="aDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aDraw.Designer.cs">
+      <DependentUpon>aDraw.cs</DependentUpon>
+    </Compile>
     <Compile Include="aImportCSVForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aDisplayProperForm.resx">
       <DependentUpon>aDisplayProperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aDraw.resx">
+      <DependentUpon>aDraw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="aImportCSVForm.resx">
       <DependentUpon>aImportCSVForm.cs</DependentUpon>

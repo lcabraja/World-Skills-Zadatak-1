@@ -59,11 +59,12 @@
             this.aOpenFileButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aOpenFileButton.FlatAppearance.BorderSize = 0;
             this.aOpenFileButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.aOpenFileButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.aOpenFileButton.Location = new System.Drawing.Point(561, 0);
             this.aOpenFileButton.Margin = new System.Windows.Forms.Padding(0);
             this.aOpenFileButton.MinimumSize = new System.Drawing.Size(50, 18);
             this.aOpenFileButton.Name = "aOpenFileButton";
-            this.aOpenFileButton.Size = new System.Drawing.Size(80, 35);
+            this.aOpenFileButton.Size = new System.Drawing.Size(80, 36);
             this.aOpenFileButton.TabIndex = 0;
             this.aOpenFileButton.Text = "Browse";
             this.aOpenFileButton.UseVisualStyleBackColor = true;
@@ -78,7 +79,7 @@
             this.aSelectFile.Location = new System.Drawing.Point(0, 0);
             this.aSelectFile.Margin = new System.Windows.Forms.Padding(0);
             this.aSelectFile.Name = "aSelectFile";
-            this.aSelectFile.Size = new System.Drawing.Size(67, 35);
+            this.aSelectFile.Size = new System.Drawing.Size(67, 36);
             this.aSelectFile.TabIndex = 2;
             this.aSelectFile.Text = "Select File:";
             this.aSelectFile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,7 +131,7 @@
             this.aReadDataButton.Margin = new System.Windows.Forms.Padding(0);
             this.aReadDataButton.MinimumSize = new System.Drawing.Size(60, 18);
             this.aReadDataButton.Name = "aReadDataButton";
-            this.aReadDataButton.Size = new System.Drawing.Size(80, 35);
+            this.aReadDataButton.Size = new System.Drawing.Size(80, 36);
             this.aReadDataButton.TabIndex = 5;
             this.aReadDataButton.Text = "Read Data";
             this.aReadDataButton.UseVisualStyleBackColor = true;
@@ -143,11 +144,11 @@
             this.aConnectButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aConnectButton.FlatAppearance.BorderSize = 0;
             this.aConnectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aConnectButton.Location = new System.Drawing.Point(443, 0);
+            this.aConnectButton.Location = new System.Drawing.Point(442, 0);
             this.aConnectButton.Margin = new System.Windows.Forms.Padding(0);
             this.aConnectButton.MinimumSize = new System.Drawing.Size(67, 18);
             this.aConnectButton.Name = "aConnectButton";
-            this.aConnectButton.Size = new System.Drawing.Size(117, 42);
+            this.aConnectButton.Size = new System.Drawing.Size(117, 40);
             this.aConnectButton.TabIndex = 26;
             this.aConnectButton.Text = "Connect...";
             this.aConnectButton.UseVisualStyleBackColor = true;
@@ -157,7 +158,7 @@
             // 
             this.aConnectionStringBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aConnectionStringBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aConnectionStringBox.Location = new System.Drawing.Point(0, 39);
+            this.aConnectionStringBox.Location = new System.Drawing.Point(0, 40);
             this.aConnectionStringBox.Margin = new System.Windows.Forms.Padding(0);
             this.aConnectionStringBox.MinimumSize = new System.Drawing.Size(368, 28);
             this.aConnectionStringBox.Name = "aConnectionStringBox";
@@ -168,7 +169,7 @@
             // 
             this.aPasswordBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aPasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aPasswordBox.Location = new System.Drawing.Point(212, 0);
+            this.aPasswordBox.Location = new System.Drawing.Point(211, 0);
             this.aPasswordBox.Margin = new System.Windows.Forms.Padding(0);
             this.aPasswordBox.MinimumSize = new System.Drawing.Size(68, 28);
             this.aPasswordBox.Name = "aPasswordBox";
@@ -181,7 +182,7 @@
             // 
             this.aDatabaseBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aDatabaseBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aDatabaseBox.Location = new System.Drawing.Point(316, 0);
+            this.aDatabaseBox.Location = new System.Drawing.Point(315, 0);
             this.aDatabaseBox.Margin = new System.Windows.Forms.Padding(0);
             this.aDatabaseBox.MinimumSize = new System.Drawing.Size(68, 28);
             this.aDatabaseBox.Name = "aDatabaseBox";
@@ -197,7 +198,7 @@
             this.aServerBox.Margin = new System.Windows.Forms.Padding(0);
             this.aServerBox.MinimumSize = new System.Drawing.Size(68, 28);
             this.aServerBox.Name = "aServerBox";
-            this.aServerBox.Size = new System.Drawing.Size(148, 28);
+            this.aServerBox.Size = new System.Drawing.Size(147, 28);
             this.aServerBox.TabIndex = 22;
             this.aServerBox.TextChanged += new System.EventHandler(this.updateConnectionString);
             // 
@@ -205,7 +206,7 @@
             // 
             this.aUsernameBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aUsernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aUsernameBox.Location = new System.Drawing.Point(148, 0);
+            this.aUsernameBox.Location = new System.Drawing.Point(147, 0);
             this.aUsernameBox.Margin = new System.Windows.Forms.Padding(0);
             this.aUsernameBox.MinimumSize = new System.Drawing.Size(68, 28);
             this.aUsernameBox.Name = "aUsernameBox";
@@ -219,7 +220,7 @@
             this.aTableBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aTableBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aTableBox.FormattingEnabled = true;
-            this.aTableBox.Location = new System.Drawing.Point(560, 0);
+            this.aTableBox.Location = new System.Drawing.Point(559, 0);
             this.aTableBox.Margin = new System.Windows.Forms.Padding(0);
             this.aTableBox.MinimumSize = new System.Drawing.Size(68, 0);
             this.aTableBox.Name = "aTableBox";
@@ -233,11 +234,11 @@
             this.aImportButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aImportButton.FlatAppearance.BorderSize = 0;
             this.aImportButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.aImportButton.Location = new System.Drawing.Point(636, 0);
+            this.aImportButton.Location = new System.Drawing.Point(635, 0);
             this.aImportButton.Margin = new System.Windows.Forms.Padding(0);
             this.aImportButton.MinimumSize = new System.Drawing.Size(67, 18);
             this.aImportButton.Name = "aImportButton";
-            this.aImportButton.Size = new System.Drawing.Size(89, 42);
+            this.aImportButton.Size = new System.Drawing.Size(90, 40);
             this.aImportButton.TabIndex = 19;
             this.aImportButton.Text = "Import";
             this.aImportButton.UseVisualStyleBackColor = true;
@@ -284,7 +285,7 @@
             this.aPanelTop.Name = "aPanelTop";
             this.aPanelTop.RowCount = 1;
             this.aPanelTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.aPanelTop.Size = new System.Drawing.Size(721, 35);
+            this.aPanelTop.Size = new System.Drawing.Size(721, 36);
             this.aPanelTop.TabIndex = 0;
             // 
             // aPanelBottom
@@ -296,7 +297,7 @@
             this.aPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
             this.aPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
             this.aPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.aPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.aPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.aPanelBottom.Controls.Add(this.aServerBox, 0, 0);
             this.aPanelBottom.Controls.Add(this.aImportButton, 6, 0);
             this.aPanelBottom.Controls.Add(this.aDatabaseBox, 3, 0);
@@ -305,12 +306,12 @@
             this.aPanelBottom.Controls.Add(this.aConnectButton, 4, 0);
             this.aPanelBottom.Controls.Add(this.aPasswordBox, 2, 0);
             this.aPanelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aPanelBottom.Location = new System.Drawing.Point(0, 78);
+            this.aPanelBottom.Location = new System.Drawing.Point(0, 80);
             this.aPanelBottom.Margin = new System.Windows.Forms.Padding(0);
             this.aPanelBottom.Name = "aPanelBottom";
             this.aPanelBottom.RowCount = 1;
             this.aPanelBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.aPanelBottom.Size = new System.Drawing.Size(725, 42);
+            this.aPanelBottom.Size = new System.Drawing.Size(725, 40);
             this.aPanelBottom.TabIndex = 26;
             // 
             // aOpenFileForm

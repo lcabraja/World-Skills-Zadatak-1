@@ -14,8 +14,7 @@ namespace World_Skills_Zadatak_1
             InitializeComponent();
         }
 
-        private DataTable export;
-
+        private DataTable export = new DataTable();
         private void aBrowseButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog() { Filter = "CSV File|*.csv" })
@@ -50,7 +49,14 @@ namespace World_Skills_Zadatak_1
         public List<string> dataTables;
         private void aConnectButton_Click(object sender, EventArgs e)
         {
-            getTables(getConnectionString());
+            try
+            {
+                getTables(getConnectionString());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
         private void aImportButton_Click(object sender, EventArgs e)
         {

@@ -48,7 +48,6 @@ namespace World_Skills_Zadatak_1
 
         private void aTimer_Tick(object sender, EventArgs e)
         {
-            label1.Text = "aaa";
             if (display.Columns.Count == 0)
                 if (import.IsInitialized)
                 {
@@ -62,9 +61,6 @@ namespace World_Skills_Zadatak_1
             int i = 0;
             foreach (string s in (aDisplay.DataSource as DataTable).Rows[aDisplay.CurrentCell.RowIndex].ItemArray)
                 preEditedCell[i++] = s;
-            label1.Text = preEditedCell[0];
-            label2.Text = preEditedCell[1];
-            label3.Text = preEditedCell[2];
         }
         private void aDisplay_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
@@ -92,11 +88,16 @@ namespace World_Skills_Zadatak_1
         }
 
         private void aDisplayProperForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Debug.WriteLine("waaa");
-            //Debug.WriteLine(Application.OpenForms[0].);
-            //if (Application.OpenForms.Count <= 1)
-            //    Application.Exit();
+        {                     
+            Application.Exit();                                     
         }
-    }
-}
+
+        private void aOpenChartButton_Click(object sender, EventArgs e)
+        {
+            aDraw form = new aDraw();
+            form.Show();
+            form.import = display;
+        }
+    }                                                                   
+}                                                                       
+                                                                        
